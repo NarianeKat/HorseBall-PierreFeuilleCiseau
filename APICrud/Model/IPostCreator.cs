@@ -8,5 +8,6 @@ namespace APICrud.Model
 {
     public interface IPostCreator
     {
+
     }
 }
