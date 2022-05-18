@@ -13,12 +13,12 @@ namespace PierreFeuilleCiseau
         public Choix () {
             }
 
-        public string GetChoix()
+        public string getChoix()
         {
             return this.ChoixNom;
         }
 
-        public string SetChoix(string choix)
+        public string setChoix(string choix)
         {
             this.ChoixNom = choix;
             return this.ChoixNom;

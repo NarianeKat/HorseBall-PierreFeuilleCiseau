@@ -20,10 +20,10 @@ namespace PierreFeuilleCiseauTest
             };
 
             //act 
-            string results = FauxJoueur.GetChoix();
+            string results = FauxJoueur.getJoueur();
 
             //assert
-            Assert.Equal(results, FauxJoueur.JoueurName);
+            Assert.Equal(results, FauxJoueur.JoueurNom);
         }
     }
 }

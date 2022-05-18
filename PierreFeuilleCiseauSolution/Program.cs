@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// START GAME 
+Console.WriteLine("Game is start");
+
+const string Pierre = "pierre";
+const string Feuille = "feuille";
+const string Ciseau = "ciseau";

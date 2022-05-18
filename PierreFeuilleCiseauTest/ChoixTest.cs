@@ -15,7 +15,7 @@ namespace PierreFeuilleCiseauTest
             };
 
             //act 
-            string results = FauxChoix.GetChoix();
+            string results = FauxChoix.getChoix();
 
             //assert
             Assert.Equal(results, FauxChoix.ChoixNom);
@@ -30,7 +30,7 @@ namespace PierreFeuilleCiseauTest
             };
 
             //act 
-            string results = FauxChoix.SetChoix("NouveauChoix");
+            string results = FauxChoix.setChoix("NouveauChoix");
 
             //assert
             Assert.Equal(results, "NouveauChoix");
