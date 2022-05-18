@@ -20,7 +20,7 @@ namespace APICrud.Model
     {
         static HttpClient client= new HttpClient();
 
-        static async Task<Uri> CreatePostAsync(Post post)
+        public async Task<Uri> CreatePostAsync(Post post)
         {
             HttpResponseMessage response = await client.PostAsJsonAsync(
                 "api/posts", post);
@@ -30,7 +30,7 @@ namespace APICrud.Model
             return response.Headers.Location;
         }
 
-        static async Task<Post> GetPostAsync(string path)
+        public async Task<Post> GetPostAsync(string path)
         {
             Post post = null;
             HttpResponseMessage response = await client.GetAsync(path);
@@ -41,7 +41,7 @@ namespace APICrud.Model
             return post;
         }
 
-        static async Task<Post> UpdatePostAsync(Post post)
+        public async Task<Post> UpdatePostAsync(Post post)
         {
             HttpResponseMessage response = await client.PutAsJsonAsync(
                 $"api/posts/{post.id}", post);
@@ -52,7 +52,7 @@ namespace APICrud.Model
             return post;
         }
 
-        static async Task<HttpStatusCode> DeletePosttAsync(string id)
+        public async Task<HttpStatusCode> DeletePosttAsync(string id)
         {
             HttpResponseMessage response = await client.DeleteAsync(
                 $"api/posts/{id}");
